@@ -1,0 +1,28 @@
+# you typed in accifentally instead of accidentallyy
+# fix the typo and move back to where you started
+
+incorrect: accifentally 
+correct:   accidentally
+
+accifentally
+	     ^
+i_[ESC] F f r d A
+
+# you wrote a line but want to change "accidentally" to "intentionally"
+
+incorrect: you accidentally typed
+correct:   you intentionally typed
+
+you accidentally typed 
+		       ^
+i_[ESC] 2b c w
+i_[ESC] 2b d w i
+
+# you typed a word but want to replace it with a different one
+
+incorrect: Lorem ipsum dolor sit amet, consectetur mouse
+correct:   Lorem ipsum dolor sit amet, consectetur mice
+
+Lorem ipsum dolor sit amet, consectetur mouse
+					     ^
+i_Ctrl+w
