@@ -26,3 +26,22 @@ correct:   Lorem ipsum dolor sit amet, consectetur mice
 Lorem ipsum dolor sit amet, consectetur mouse
 					     ^
 i_Ctrl+w
+
+# lets assume you have a function but want to add a new parameter
+
+incorrect:    int minDifficulty(vector<int>& jobDifficulty, int d) {
+        
+              }
+
+correct:      int minDifficulty(vector<int>& jobDifficulty, int d, int x) {
+        
+              }
+
+
+    int minDifficulty(vector<int>& jobDifficulty, int d) {
+    
+	
+	^
+    }
+
+    i_[ESC] 2k % %
