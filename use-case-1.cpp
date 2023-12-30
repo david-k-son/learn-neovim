@@ -1,5 +1,8 @@
 /*
  * remove the braces and make them all one line
+ * fix typo:
+ *      nums[0]
+ *      nums[i]
  */
 
 class Solution {
